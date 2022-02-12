@@ -10,10 +10,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-extern "C" {
 #include "events_init.h"
 #include "gui_guider.h"
-}
 
 #define GUI_GUIDER_UI
 
@@ -33,7 +31,7 @@ static lv_obj_t* count_label;
 
 static SemaphoreHandle_t xGuiSemaphore = NULL;
 
-extern "C" void app_main() {
+void app_main() {
   // Need to create the GUI task pinned to a core.
   xTaskCreatePinnedToCore(task_GUI, "GUI", 4096 * 2, NULL, 0, NULL, 1);
 

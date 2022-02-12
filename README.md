@@ -1,6 +1,6 @@
 # ESP32 TTGO-TDisplay LVGL Template
 
-Hello world base project for TTGO-TDisplay board using LVGL.
+Hello world base project for TTGO-TDisplay board using LVGL and GuiGuider.
 
 Example Hello World
 
